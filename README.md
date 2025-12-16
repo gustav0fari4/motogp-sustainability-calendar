@@ -53,3 +53,9 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 # macOS/Linux
 source .venv/bin/activate
+
+## Conda setup (recommended)
+```bash
+conda env create -f environment.yml
+conda activate numerical-optimisation
+python motogp-calendar-base.py
