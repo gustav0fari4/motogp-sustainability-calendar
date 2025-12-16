@@ -612,7 +612,7 @@ def readCSVFile(file):
     """
     path = os.path.join(BASE_DIR, file)
     rows = []
-    with open(file, newline='') as csv_file:
+    with open(path, newline='') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             rows.append(row)
